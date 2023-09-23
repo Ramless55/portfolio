@@ -22,7 +22,7 @@ const projects = [
 ---
 
 <section
-  class="flex flex-col items-center h-fit py-16 scroll-mt-16 bg-base-100 md:bg-neutral-focus p-2"
+  class="flex flex-col items-center h-fit py-16 scroll-mt-16 bg-main md:bg-neutral-focus p-2"
   id="project"
 >
   <h1 class="text-5xl font-semibold font-chakra mb-8">
@@ -45,7 +45,7 @@ const projects = [
                 />
                 <div class=" h-fit w-full bg-black/40 absolute bottom-10 flex  flex-wrap">
                   {project.technologies.map((tech) => (
-                    <div class="badge badge-primary m-1">{tech}</div>
+                    <div class="badge badge-primary bg-primary m-1">{tech}</div>
                   ))}
                 </div>
               </div>

@@ -49,7 +49,7 @@ const projects = [
                   ))}
                 </div>
               </div>
-                <div class=" absolute inset-0 h-full w-full rounded-xl bg-black/90 px-4 text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+              <div class=" absolute inset-0 h-full w-full rounded-xl bg-black/90 px-4 text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
                 <div class="flex min-h-full flex-col items-center justify-evenly">
                   <h1 class="text-2xl font-semibold font-chakra md:text-3xl">
                     <span class="text-accent">&#123</span> {project.name}
@@ -71,40 +71,7 @@ const projects = [
                       href={project.github}
                       class="btn btn-secondary text-xs md:text-sm"
                     >
-                      <img
-                        class="h-8 w-8"
-                        src="/github3.svg"
-                        alt=""
-                      />
-                      Ver código
-                    </a>
-                  </div>
-                </div>
-              </div>
-                <div class="flex min-h-full flex-col items-center justify-evenly">
-                  <h1 class="text-2xl font-semibold font-chakra md:text-3xl">
-                    <span class="text-accent">&#123</span> {project.name}
-                    <span class="text-accent">&#125</span>
-                  </h1>
-                  <p class=" text-sm mb-2 md:text-base">
-                    {project.description}
-                  </p>
-                  <div class="flex justify-evenly w-full">
-                    <a
-                      href={project.page}
-                      class="btn btn-secondary h-fit w-fit text-xs md:text-sm"
-                    >
-                      Ver pagina
-                    </a>
-                    <a
-                      href={project.github}
-                      class="btn btn-secondary text-xs md:text-sm"
-                    >
-                      <img
-                        class="h-8 w-8"
-                        src="../../../public/github3.svg"
-                        alt=""
-                      />
+                      <img class="h-8 w-8" src="/github3.svg" alt="" />
                       Ver código
                     </a>
                   </div>

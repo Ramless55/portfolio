@@ -1,0 +1,27 @@
+<button
+  class="btn btn-secondary rounded-full mr-2 h-16 w-16 text-zinc-100 hover:bg-secondary hover:scale-110 2xl:text-base"
+  onclick="
+  my_modal_5.showModal()
+  ">CV</button
+>
+<dialog id="my_modal_5" class="modal modal-middle text-zinc-100">
+  <form method="dialog" class="modal-box">
+    <h1 class="text-2xl font-medium font-chakra mb-4 w-full text-center">
+      <span class="text-accent">&#123</span> Curriculum Vitae <span
+        class="text-accent">&#125</span
+      >
+    </h1>
+    <img class="rounded-xl" src="../../public/cv.jpg" alt="" />
+    <div class="modal-action">
+      <!-- if there is a button in form, it will close the modal -->
+      <a
+        class="btn btn-secondary text-zinc-100"
+        download="Ramiro_Morales_Kraff_CV"
+        href="../../public/curriculum.pdf"
+        ><img class="h-6 w-6" src="../../public/dowload.svg" alt="" /> Descargar
+        CV</a
+      >
+      <button class="btn btn-outline btn-secondary">Close</button>
+    </div>
+  </form>
+</dialog>

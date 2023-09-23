@@ -1,0 +1,36 @@
+---
+import ModalCV from "../ModalCV.astro";
+---
+
+<section class="flex flex-col justify-center items-center h-full" id="landing">
+  <div class="container flex flex-col items-center justify-center">
+    <p
+      class="text-6xl font-semibold pb-6 text-center font-chakra xl:max-2xl:text-7xl 2xl:text-8xl"
+    >
+      RAMIRO MORALES
+    </p>
+    <p
+      class="text-3xl font-normal text-center font-chakra xl:max-2xl:text-4xl 2xl:text-5xl"
+    >
+      <span class="text-accent">&#123</span> Full Stack Developer
+      <span class="text-accent">&#125</span>
+    </p>
+  </div>
+  <div class="flex justify-center items-center translate-y-14 z-0">
+    <ModalCV />
+    <a
+      target="_blank"
+      class="rounded-full mr-2 h-16 w-16 hover:scale-110 ease-in-out duration-200"
+      href="https://www.linkedin.com/in/ramiro-morales-kraff/"
+      target="_blank"
+      ><img class="rounded-full" src="../../../public/linkedin3.svg" alt="" />
+    </a>
+    <a
+      target="_blank"
+      class="rounded-full h-16 w-16 hover:scale-110 ease-in-out duration-200"
+      href="https://github.com/Ramless55"
+      target="_blank"
+      ><img class="rounded-full" src="../../../public/github2.svg" alt="" />
+    </a>
+  </div>
+</section>

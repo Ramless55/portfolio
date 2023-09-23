@@ -1,0 +1,119 @@
+---
+const projects = [
+  {
+    name: "VariedTastes",
+    description:
+      "VariedTastes es una web de mensajería desarrollada con el propósito de implementar la tecnología de sockets. Además de hacer uso de sockets, también incorpora la funcionalidad de registro de usuarios y almacenamiento de mensajes de manera persistente en la base de datos.",
+    page: "https://www.youtube.com/watch?v=sOXW0ZnJxbQ&t=3373s&ab_channel=Fazt",
+    image: "../../../public/projects/VariedTastes.png",
+    technologies: [
+      "Socket.io",
+      "React",
+      "Express",
+      "Prisma",
+      "PostgreSQL",
+      "Jwt",
+      "Zustand",
+      "Tailwind",
+    ],
+    github: "",
+  },
+];
+---
+
+<section
+  class="flex flex-col items-center h-fit py-16 scroll-mt-16 md:bg-neutral-focus p-2"
+  id="project"
+>
+  <h1 class="text-5xl font-semibold font-chakra mb-8">
+    <span class="text-accent">&#123</span> Proyectos <span class="text-accent"
+      >&#125</span
+    >
+  </h1>
+  <!-- cards -->
+  <div class="w-full h-full flex flex-wrap justify-evenly xl:px-20 2xl:px-60">
+    {
+      projects.map((project) => (
+        <div class="flex w-full max-w-md h-fit flex-col justify-center m-4 items-center rounded-xl">
+          <div class="group h-72 w-full [perspective:1000px]">
+            <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div class="absolute inset-0">
+                <img
+                  class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40"
+                  src={project.image}
+                  alt=""
+                />
+                <div class=" h-fit w-full bg-black/40 absolute bottom-10 flex  flex-wrap">
+                  {project.technologies.map((tech) => (
+                    <div class="badge badge-primary m-1">{tech}</div>
+                  ))}
+                </div>
+              </div>
+                <div class=" absolute inset-0 h-full w-full rounded-xl bg-black/90 px-4 text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                <div class="flex min-h-full flex-col items-center justify-evenly">
+                  <h1 class="text-2xl font-semibold font-chakra md:text-3xl">
+                    <span class="text-accent">&#123</span> {project.name}
+                    <span class="text-accent">&#125</span>
+                  </h1>
+                  <p class=" text-sm mb-2 md:text-base">
+                    {project.description}
+                  </p>
+                  <div class="flex justify-evenly w-full">
+                    <a
+                    target="_blank"
+                      href={project.page}
+                      class="btn btn-secondary h-fit w-fit text-xs md:text-sm"
+                    >
+                      Ver pagina
+                    </a>
+                    <a
+                    target="_blank"
+                      href={project.github}
+                      class="btn btn-secondary text-xs md:text-sm"
+                    >
+                      <img
+                        class="h-8 w-8"
+                        src="../../../public/github3.svg"
+                        alt=""
+                      />
+                      Ver código
+                    </a>
+                  </div>
+                </div>
+              </div>
+                <div class="flex min-h-full flex-col items-center justify-evenly">
+                  <h1 class="text-2xl font-semibold font-chakra md:text-3xl">
+                    <span class="text-accent">&#123</span> {project.name}
+                    <span class="text-accent">&#125</span>
+                  </h1>
+                  <p class=" text-sm mb-2 md:text-base">
+                    {project.description}
+                  </p>
+                  <div class="flex justify-evenly w-full">
+                    <a
+                      href={project.page}
+                      class="btn btn-secondary h-fit w-fit text-xs md:text-sm"
+                    >
+                      Ver pagina
+                    </a>
+                    <a
+                      href={project.github}
+                      class="btn btn-secondary text-xs md:text-sm"
+                    >
+                      <img
+                        class="h-8 w-8"
+                        src="../../../public/github3.svg"
+                        alt=""
+                      />
+                      Ver código
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>

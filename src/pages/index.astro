@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Landing from "../components/sections/Landing.astro";
+import About from "../components/sections/About.astro";
+import Projects from "../components/sections/projects.astro";
+import Contact from "../components/sections/Contact.astro";
+import Experience from "../components/sections/Experience.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <Navbar />
+  <main class="h-full w-full">
+    <Landing />
+    <Experience />
+    <About />
+    <Projects />
+    <Contact />
+  </main>
+</Layout>

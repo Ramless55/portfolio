@@ -1,0 +1,39 @@
+---
+const skillsSvg = [
+  { name: "React", link: "../../public/technologies/react.svg" },
+  { name: "Express", link: "../../public/technologies/express.svg" },
+  { name: "JavaScript", link: "../../public/technologies/javascript.svg" },
+  { name: "NodeJs", link: "../../public/technologies/nodejs.svg" },
+  { name: "TypeScript", link: "../../public/technologies/typescript.svg" },
+  { name: "MongoDB", link: "../../public/technologies/mongodb.svg" },
+  { name: "PostgreSQL", link: "../../public/technologies/postgresql.svg" },
+  { name: "Prisma", link: "../../public/technologies/prisma.svg" },
+  { name: "Tailwind", link: "../../public/technologies/tailwind.svg" },
+  { name: "HTML", link: "../../public/technologies/html.svg" },
+  { name: "CSS", link: "../../public/technologies/css.svg" },
+];
+---
+
+<div
+  class="h-auto w-full flex flex-col items-center pt-16 scroll-mt-16 bg-neutral-focus md:bg-transparent"
+  id="skills"
+>
+  <h1 class="text-5xl font-semibold font-chakra mb-4">
+    <span class="text-accent">&#123</span> Habilidades <span class="text-accent"
+      >&#125</span
+    >
+  </h1>
+  <div class="flex flex-wrap justify-around">
+    {
+      skillsSvg.map((technologie) => (
+        <div class="tooltip tooltip-primary" data-tip={technologie.name}>
+          <img
+            class="h-20 w-20 m-4 2xl:h-24 2xl:w-24"
+            src={technologie.link}
+            alt=""
+          />
+        </div>
+      ))
+    }
+  </div>
+</div>

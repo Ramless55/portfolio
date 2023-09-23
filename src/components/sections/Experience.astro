@@ -1,0 +1,83 @@
+---
+const experience = [
+  {
+    name: "This Lesson",
+    type: "Freelance",
+    position: "Backend / Full Stack",
+    description:
+      "Mi responsabilidad en este proyecto consistía en desarrollar una API REST. El enfoque principal del desarrollo eran los roles de usuarios en la aplicación. El proyecto se centraba en la creación de un sistema de gestión empresarial.",
+    github: "https://github.com/Ramless55/ofthislesson",
+    technologies: ["Scrum", "Javascript", "Express", "MongoDB", "Jwt", "React"],
+  },
+  {
+    name: "Info Manager",
+    type: "Freelance",
+    position: "Fontend / Mobile",
+    description:
+      "Mi responsabilidad en este proyecto consistía en desarrollar una aplicacion mobile para consumir una API. La aplicacion era un Software de gestión para empresas comerciales, aplicable a todos los rubros, esto incluye facturación desde cualquier punto de venta, control de stock, manejo de sucursales, impuestos y contabilidad.",
+    github: "https://github.com/gonzalez-gabriel/infomanager-rn-app",
+    technologies: [
+      "Scrum",
+      "Javascript",
+      "React Native",
+      "Zustand",
+      "Tailwind",
+    ],
+  },
+];
+---
+
+<section
+  class="flex flex-col items-center h-fit pt-16 scroll-mt-16 bg-neutral-focus p-2"
+  id="experience"
+>
+  <h1 class="text-5xl font-semibold font-chakra mb-16">
+    <span class="text-accent">&#123</span> Experiencia <span class="text-accent"
+      >&#125</span
+    >
+  </h1>
+  <div class="w-full h-full flex flex-wrap justify-evenly 2xl:px-60 mb-10">
+    {
+      experience.map((experience) => (
+        <div class=" h-auto max-w-xl rounded-xl text-slate-200 bg-gray-900 py-4 mb-10">
+          <div class="flex min-h-full flex-col items-center justify-evenly">
+            <h1 class="text-2xl font-semibold font-chakra sm:text-3xl">
+              <span class="text-accent">&#123</span> {experience.name}
+              <span class="text-accent">&#125</span>
+            </h1>
+            <div class="divider my-0" />
+            <div class=" w-full flex justify-evenly px-4">
+              <p class="text-base sm:text-lg">
+                <span class=" font-bold">Empresa: </span>
+                {experience.type}
+              </p>
+              <p class="text-base sm:text-lg">
+                <span class=" font-bold">Posicion: </span>
+                {experience.position}
+              </p>
+            </div>
+            <div class="divider my-0" />
+            <p class=" text-base sm:text-lg px-4 sm:px-8">
+              {experience.description}
+            </p>
+            <div class=" h-fit w-full bg-black/40 flex flex-wrap my-3">
+              {experience.technologies.map((tech) => (
+                <div class="badge badge-primary m-1">{tech}</div>
+              ))}
+            </div>
+            <div class="flex justify-evenly w-full">
+              <a
+                target="_blank"
+                href={experience.github}
+                class="btn btn-secondary text-xs sm:text-sm"
+              >
+                <img class="h-8 w-8" src="../../../public/github3.svg" alt="" />
+                Ver código
+              </a>
+            </div>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>

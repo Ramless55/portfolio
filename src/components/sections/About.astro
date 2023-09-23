@@ -1,0 +1,18 @@
+---
+import AboutText from "../AboutText.astro";
+import AboutSkills from "../AboutSkills.astro";
+---
+
+<section class="flex flex-col items-center py-14 scroll-mt-16" id="about">
+  <h1 class="text-5xl font-semibold font-chakra mb-3">
+    <span class="text-accent">&#123</span> Sobre mi <span class="text-accent"
+      >&#125</span
+    >
+  </h1>
+  <div
+    class="w-full flex flex-col items-center justify-center md:flex-row xl:px-20 2xl:px-80"
+  >
+    <AboutText />
+    <AboutSkills />
+  </div>
+</section>

@@ -5,8 +5,8 @@
   ">CV</button
 >
 <dialog id="my_modal_5" class="modal modal-middle text-zinc-100">
-  <form method="dialog" class="modal-box">
-    <h1 class="text-2xl font-medium font-chakra mb-4 w-full text-center">
+  <form method="dialog" class="modal-box bg-main">
+    <h1 class="text-2xl font-bold font-chakra mb-4 w-full text-center">
       <span class="text-accent">&#123</span> Curriculum Vitae <span
         class="text-accent">&#125</span
       >
@@ -15,12 +15,15 @@
     <div class="modal-action">
       <!-- if there is a button in form, it will close the modal -->
       <a
-        class="btn btn-secondary text-zinc-100"
+        class="btn btn-secondary bg-pink border-pink text-zinc-100"
         download="Ramiro_Morales_Kraff_CV"
         href="/public/curriculum.pdf"
         ><img class="h-6 w-6" src="/dowload.svg" alt="" /> Descargar CV</a
       >
-      <button class="btn btn-outline btn-secondary">Close</button>
+      <button
+        class="btn btn-outline btn-secondary border-pink text-pink hover:bg-pink hover:border-pink"
+        >Close</button
+      >
     </div>
   </form>
 </dialog>
